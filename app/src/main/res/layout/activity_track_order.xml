@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TrackOrder" >
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.TrackOrder" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:buttonBarButtonStyle"
+            android:text="Call"
+            android:layout_weight="1"
+            android:id="@+id/btnCall"
+            android:textColor="#000"
+            android:fontFamily="@font/googlesans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+        <Button
+            android:textColor="#000"
+            style="?android:buttonBarButtonStyle"
+            android:fontFamily="@font/googlesans"
+            android:text="Shipped"
+            android:layout_weight="1"
+            android:id="@+id/btnTrack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

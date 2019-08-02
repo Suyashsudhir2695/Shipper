@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FoodOrderSupplier</string>
+    <string name="title_activity_track_order">Map</string>
+</resources>
